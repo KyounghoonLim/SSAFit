@@ -1,0 +1,35 @@
+.mypage-faq {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    color: #56586C;
+    letter-spacing: 1rem;
+  }
+  .accordion {
+    width: 80%;
+    .accordion-header {
+      button {
+        font-size: 1.15rem;
+        letter-spacing: 0.15rem;
+      }
+    }
+    p {
+      user-select: none;
+      margin: 0.1rem 0;
+      font-size: 1.05rem;
+      letter-spacing: 0.15rem;
+      span {
+        font-size: 1.15rem;
+        color: #56586C;
+      }
+    }
+    .accordion-content {
+      background-color: rgba(216, 216, 216, 0.3);
+    }
+  }
+}

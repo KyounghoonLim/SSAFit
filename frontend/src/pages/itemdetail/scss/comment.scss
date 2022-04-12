@@ -1,0 +1,78 @@
+.comment {
+  display: flex;
+  position: relative;
+  height: 4vh;
+
+  img {
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  p {
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 5vh;
+    transform: translateY(-50%);
+    &.nick-p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .nickname {
+    user-select: none;
+    width: 15%;
+    position: relative;
+    margin: 0 1%;
+    padding: 0;
+    border-right: 2px solid #e6e5e575;
+  }
+
+  .comment-edit {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    margin-right: 1%;
+    width: 80%;
+    input {
+      height: 100%;
+      width: 90%;
+      font-size: 1.25rem;
+      letter-spacing: 0.15rem;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      height: 100%;
+      width: 8%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .content {
+    position: relative;
+    width: 76%;
+    padding: 0;
+    margin: 0 1% 0 0;
+  }
+
+  .edit-btn {
+    margin: 0.5rem;
+    background-image: url('../images/edit.png');
+    background-size: cover;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+  }
+  
+  .del-btn {
+    margin: 0.5rem;
+    background-image: url('../images/del.png');
+    background-size: cover;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+  }
+}
